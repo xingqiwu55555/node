@@ -16,12 +16,16 @@ interview(res => {
 
 
 
-function interview(callback) {
-  setTimeout(() => {
-    if (Math.random() < 0.6) {
-      callback('success')
-    } else {
-      callback(new Error('fail'));
-    }
-  }, 500)
+function interview(round) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (Math.random() > 0.2) {
+        resolve('success')
+      } else {
+        var error = new Error('fail');
+        error.round = round;
+        reject(round);
+      }
+    }, 500)
+  })
 }
