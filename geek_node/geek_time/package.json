@@ -1,18 +1,28 @@
 {
-  "name": "geek_time",
+  "name": "chapter3",
   "version": "1.0.0",
-  "description": "重构极客时间网站，使用 Node.js 搭建 BFF 层； 1. 向前端提供 HTTP 服务 2. 向后端进行 RPC 通信",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "bff": "node entry.js",
+    "microservice": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fs": "0.0.1-security",
-    "koa": "2.11.0",
-    "koa-mount": "4.0.0",
-    "koa-static": "5.0.0"
+    "@babel/core": "^7.6.4",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "easy_sock": "^0.3.8",
+    "graphql": "^14.5.8",
+    "koa": "^2.10.0",
+    "koa-graphql": "^0.8.0",
+    "koa-mount": "^4.0.0",
+    "koa-static": "^5.0.0",
+    "protocol-buffers": "^4.1.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   }
 }

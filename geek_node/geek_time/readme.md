@@ -1,4 +1,3 @@
-# 项目实战
-重构极客时间网站，使用 Node.js 搭建 BFF 层；
-1. 向前端提供 HTTP 服务
-2. 向后端进行 RPC 通信
+# 先跑npm run microservice
+# 再跑npm run bff
+# 访问localhost:3000/download/
