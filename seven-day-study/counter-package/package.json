@@ -1,0 +1,4 @@
+{
+  "name": "counter-package",
+  "main": "./lib/main.js"
+}
