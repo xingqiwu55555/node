@@ -23,4 +23,5 @@ const main = argv => {
 const MAIN_MODULE_PATH = process.argv[1];
 console.log(111, MAIN_MODULE_PATH);
 
-main([`${MAIN_MODULE_PATH}/source.json`, `${MAIN_MODULE_PATH}/copy.json`]);
+// 命令行相对路径
+main(['./module-fs/source.json', './module-fs/copy.json']);
